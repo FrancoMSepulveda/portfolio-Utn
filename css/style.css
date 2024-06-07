@@ -4,47 +4,93 @@
 
 body {
     background-color: white;
-}
-
-
-.iconLista {
-    color: green;
-}
-
-.logo {
-    font-family: "Oooh Baby", cursive;;
-}
-
-.nombre {
     font-family: "Raleway", sans-serif;
-    font-weight: lighter;
-}
-#oscuro {
-    font-family: "Raleway", sans-serif;
-    font-weight: bolder;
+
 }
 
-.ocupacion {
-    font-family: "Inconsolata", monospace;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    background-color: gray;
-}
-
+                    /*PRIMERA SECCIÓN DEL PORFOLIO*/
 .seccion1 {
-    margin: 3px;
-    padding: 3px;
-    background-color: antiquewhite;
     display: flex;
     height: 400px;
     justify-content: center;
     align-items: center;
 }
 
-.foto {
+.iconLista {
+    color: #2e7d80;
+}
+
+.logo {
+    font-family: "Oooh Baby", cursive;
+    color: #2a2829;
+}
+
+.nombrep1 {
+    font-weight: lighter;
+}
+#nombrep2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+}
+
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotoPerfil {
     height: 200px;
     width: 200px;
 }
+
+.pDev {
+    font-family: "Inconsolata", monospace;
+    background-color: #4c8d8e;
+    width: 400px;
+    height: 30px;
+    text-align: right;
+}
+
+
+                    /*SEGUNDA SECCIÓN DEL PORFOLIO*/
+
+.seccion2 {
+    background-color: #d1d1d0;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h2Titulo {
+    color: #994a69;
+    /* text-decoration: underline 20px white; */
+    
+}
+
+.uno {
+    display: flex;
+    flex-direction: row;
+}
+
+.divHtml {
+    width: 500px;
+}
+.divCss {
+    width: 500px;
+}
+
+.botonTrabajo {
+    /* padding: 10px; */
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-weight: bolder;
+    background-color: #9a4a6a;
+}
+
+
+
+
