@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap'); /*FUENTE PARA EL LOGO*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); /*FUENTE PARA EL CUERPO*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); /*FUENTE PARA LOS WEB DEVELOPER .. */
+
+body {
+    background-color: white;
+}
+
+
+.iconLista {
+    color: green;
+}
+
+.logo {
+    font-family: "Oooh Baby", cursive;;
+}
+
+.nombre {
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+}
+#oscuro {
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+}
+
+.ocupacion {
+    font-family: "Inconsolata", monospace;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+.seccion1 {
+    margin: 3px;
+    padding: 3px;
+    background-color: antiquewhite;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto {
+    height: 200px;
+    width: 200px;
+}
