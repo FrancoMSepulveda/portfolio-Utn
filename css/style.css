@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap'); /*FUENTE PARA EL LOGO*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); /*FUENTE PARA EL CUERPO*/
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); /*FUENTE PARA LOS WEB DEVELOPER .. */
+/*FUENTE PARA EL LOGO*/
+@import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
+/*FUENTE PARA EL CUERPO*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/*FUENTE PARA LOS WEB DEVELOPER .. */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+
 
 body {
     background-color: white;
-    font-family: "Raleway", sans-serif;
-
+    font-family: "Lato", sans-serif;
 }
 
-                    /*PRIMERA SECCIÓN DEL PORFOLIO*/
+
+/*PRIMERA SECCIÓN DEL PORFOLIO*/
 .seccion1 {
     display: flex;
     height: 400px;
+    height: 80vh;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -29,8 +35,8 @@ body {
 .nombrep1 {
     font-weight: lighter;
 }
+
 #nombrep2 {
-    font-family: "Raleway", sans-serif;
     font-weight: bolder;
 }
 
@@ -39,7 +45,8 @@ body {
     justify-content: space-between;
 }
 
-.nombrep1, .nombrep2{
+.nombrep1,
+.nombrep2 {
     position: relative;
     left: 200px;
 }
@@ -54,6 +61,7 @@ body {
 
 .pDev {
     font-family: "Inconsolata", monospace;
+    font-size: 15px;
     background-color: #4c8d8e;
     width: 700px;
     height: 35px;
@@ -63,11 +71,10 @@ body {
 }
 
 
-                    /*SEGUNDA SECCIÓN DEL PORFOLIO*/
-
+/*SEGUNDA SECCIÓN DEL PORFOLIO*/
 .seccion2 {
     background-color: #d1d1d0;
-    height: 600px;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,9 +82,8 @@ body {
 }
 
 .h2Seccion2 {
-    color: #994a69; 
+    color: #994a69;
     font-size: 20px;
-
 }
 
 .h4Seccion2 {
@@ -92,6 +98,7 @@ body {
 .divHtml {
     width: 500px;
 }
+
 .divCss {
     width: 500px;
 }
@@ -104,38 +111,100 @@ body {
     font-weight: bolder;
     background-color: #9a4a6a;
     border: 0px;
-} 
-
-
-                    /*TERCERA SECCIÓN DEL PORFOLIO*/
-
-.seccion3 {
-    background-color: white;
-    height: 700px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.h2Seccion3 {
-    font-size: 20px;
+
+/*TERCERA SECCIÓN DEL PORFOLIO*/
+.seccion3 {
+    background-color: white;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.divSeccion3 {
+    width: 600px;
+}
+
+.h3Dev {
+    font-family: "Inconsolata", monospace;
+    background-color: #4c8d8e;
+    position: relative;
+    width: 850px;
+    height: 35px;
 }
 
 .fotoPerfil3 {
     width: 200px;
     height: 220px;
-}
-
-.divFoto3 {
-}
-
-.h3Dev {
-    width: 700px;
-    font-family: "Inconsolata", monospace;
-    background-color: #4c8d8e;
-    height: 30px;
+    position: relative;
 }
 
 .divDescripcion {
+}
+
+
+/*CUARTA SECCIÓN DEL PORFOLIO*/
+.seccion4 {
+    background-color: #d1d1d0;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #457d7e;
+    font-weight: bolder;
+}
+
+hr {
+    border: 2px solid rgb(245, 245, 245);
+    border-radius: 1px;
+}
+
+.divPortfolio {
+    font-size: 20px;
+}
+
+
+.imagenes {
+    display: flex;
+    width: 700px;
+}
+
+.img {
+    box-shadow: 2px 2px 10px gray;
+    margin: 10px;
+}
+
+
+.botonArriba {
+    color: #549091;
+}
+
+
+/*QUINTA SECCIÓN DEL PORFOLIO*/
+.seccion5 {
+    height: 200px;
+    background-color: #4f9092;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.iconosContacto {
+    display: flex;
+    flex-direction: row;
+}
+
+.iconGithub,
+.iconInstagram,
+.iconLinkedin {
+    color: #2b393f;
 }
