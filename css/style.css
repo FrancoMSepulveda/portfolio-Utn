@@ -1,80 +1,130 @@
 /*FUENTE PARA EL LOGO*/
-@import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 /*FUENTE PARA EL CUERPO*/
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 /*FUENTE PARA LOS WEB DEVELOPER .. */
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
     background-color: white;
-    font-family: "Lato", sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
 }
 
 
-/*PRIMERA SECCIÓN DEL PORFOLIO*/
-.seccion1 {
+/*PRIMERA SECCIÓN*/
+.header {
     display: flex;
-    height: 400px;
-    height: 80vh;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-}
+    text-align: center;
 
-.iconLista {
-    color: #2e7d80;
 }
 
 .logo {
-    font-family: "Oooh Baby", cursive;
-    color: #2a2829;
-}
-
-.nombrep1 {
+    font-family: "Caveat", cursive;
     font-weight: lighter;
+    color: #2a2829;
+    font-size: 40px;
+    font-weight: 450;
+    margin: 5px;
+    padding: 5px;
 }
 
-#nombrep2 {
-    font-weight: bolder;
+.menu {
+    position: relative;
+    display: inline-block;
 }
+
 
 .navMenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: #8fcfd3;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.divMenuIcon {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px;
+    color: #2e7d80;
+    border-radius: 3px;
+}
+
+.navMenu a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.navMenu a:hover {
+    background-color: #4e9da0;
+}
+
+.menu:hover .navMenu {
+    display: block;
+}
+
+
+.seccion1 {
     display: flex;
-    justify-content: space-between;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.divIntro {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .nombrep1,
 .nombrep2 {
+    font-size: 50px;
     position: relative;
-    left: 200px;
+    left: 100px;
 }
 
-.fotoPerfil {
-    height: 151px;
-    width: 200px;
-    position: relative;
-    left: 170px;
-    z-index: 1;
+span {
+    font-weight: 300;
 }
 
 .pDev {
-    font-family: "Inconsolata", monospace;
+    font-family: "Roboto Mono", monospace;
     font-size: 15px;
     background-color: #4c8d8e;
-    width: 700px;
+    width: 600px;
     height: 35px;
     text-align: right;
     position: relative;
     right: 90px;
 }
 
+.imgPerfil {
+    box-shadow: 2px 2px 10px gray;
+    height: 150px;
+    width: 200px;
+    position: relative;
+    left: 170px;
+    z-index: 1;
+}
+
 
 /*SEGUNDA SECCIÓN DEL PORFOLIO*/
 .seccion2 {
+    padding: 10px;
     background-color: #d1d1d0;
-    height: 550px;
+    height: 520px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,129 +132,291 @@ body {
 }
 
 .h2Seccion2 {
+    font-size: 25px;
+    font-weight: 400;
     color: #994a69;
-    font-size: 20px;
+}
+
+.divSeccion2 {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .h4Seccion2 {
-    text-align: center;
+    font-weight: 40px;
 }
 
-.divDos {
-    display: flex;
-    flex-direction: row;
-}
-
-.divHtml {
+.divHtml, .divCss {
     width: 500px;
+    padding: 25px;
 }
 
-.divCss {
-    width: 500px;
+.divBoton {
+    margin-top: 20px;
 }
 
 .botonTrabajo {
     padding: 10px;
-    height: 50px;
-    width: 200px;
+    height: 40px;
+    width: 180px;
     color: white;
-    font-weight: bolder;
+    font-weight: 700;
+    font-size: 15px;
     background-color: #9a4a6a;
     border: 0px;
+    cursor: pointer;
+    border-radius: 3px;
 }
+
+
+
+.divBoton a:hover {
+    background-color: #b16483;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*TERCERA SECCIÓN DEL PORFOLIO*/
-.seccion3 {
-    background-color: white;
-    height: 600px;
+
+.contenedor3 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 500px;
+    flex-direction: row;
     position: relative;
+    left: 150px;
+    text-align: justify;
 }
 
-.divSeccion3 {
+.divH1 {
+    width: 800px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.parrafo3 {
+    padding: 25px;
+    position: relative;
+    right: 25px;
     width: 600px;
 }
 
-.h3Dev {
-    font-family: "Inconsolata", monospace;
+.divP {
+    padding: 4px;
+    margin: 5px;
+    font-family: "Roboto Mono", monospace; 
+    font-size: 17px;
+    font-weight: 500;
     background-color: #4c8d8e;
     position: relative;
-    width: 850px;
-    height: 35px;
+    width: 910px;
+    height: 45px;
+    right: 15px;
+    z-index: 1;
+    fon
 }
 
-.fotoPerfil3 {
-    width: 200px;
-    height: 220px;
+.divImg {
+    height: 230px;
     position: relative;
+    right: 280px;
+    bottom: 20px;
+    z-index: 20;
+    box-shadow: 2px 2px 10px gray;
 }
 
-.divDescripcion {
-}
+
+
+
+
+
+
+/* font-family: "Roboto Mono", monospace; */
+
+/* background-color: #4c8d8e;
+
+box-shadow: 2px 2px 10px gray; */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*CUARTA SECCIÓN DEL PORFOLIO*/
 .seccion4 {
     background-color: #d1d1d0;
-    height: 500px;
+    height: 512px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #457d7e;
-    font-weight: bolder;
+    color: #549091;
 }
 
-hr {
-    border: 2px solid rgb(245, 245, 245);
-    border-radius: 1px;
+.h2Portfolio {
+    font-size: 40px;
+    font-weight: 900;
 }
 
-.divPortfolio {
-    font-size: 20px;
+.hr {
+    height: 3px;
+    width: 70%;
+    background-color: rgb(243, 238, 238);
+    border-style: none;
 }
 
+.pTexto {
+    font-size: 16px;
+    font-weight: 900;
+}
 
 .imagenes {
+    padding: 20px;
     display: flex;
-    width: 700px;
+    justify-content: center;
+    flex-direction: row;
+    width: 1200px;
 }
 
 .img {
     box-shadow: 2px 2px 10px gray;
     margin: 10px;
+    width: 210px;
+    height: 210px;
 }
 
-
 .botonArriba {
+    width: 900px;
+    text-align: right;
+}
+
+.botonArriba a {
+    text-decoration: none;
     color: #549091;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*QUINTA SECCIÓN DEL PORFOLIO*/
-.seccion5 {
-    height: 200px;
-    background-color: #4f9092;
+.footer {
+    height: 180px;
+    margin: 0;
+    padding: 10px;
+    font-weight: 800;
     display: flex;
     justify-content: baseline;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    font-weight: bolder;
-    font-size: 17px;
+    background-color: #4f9092;
+    color: #2a2829;
 }
 
-.iconosContacto {
-    display: flex;
-    flex-direction: row;
+.pEmail {
+    font-size: 12px;
 }
 
-.iconGithub,
-.iconInstagram,
-.iconLinkedin {
-    color: #2b393f;
+.contactoIcon a {
+    text-decoration: none;
+    color: #2a2829;
+}
+
+.contactoIcon {
+    padding: 25px;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    width: 150px;
+}
+
+.clear {
+    height: 12px;
+    background-color: black;
 }
